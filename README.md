@@ -1,50 +1,75 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Single Screen Page App
 
-## Get started
+Single Screen Page App is single page website using Expo (react-native). This app is made for task assign to me. 
+. 
 
-1. Install dependencies
+## Tech Stack
 
-   ```bash
-   npm install
-   ```
+**Client:** React-Native
 
-2. Start the app
 
-   ```bash
-    npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
+## Run Locally
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Clone the project
 
 ```bash
-npm run reset-project
+  git clone https://github.com/arihant-getgrahak/task-08-08-2024
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Go to the project directory
 
-## Learn more
+```bash
+  cd task-08-08-2024
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Install dependencies
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+  npm install || yarn
+```
 
-## Join the community
+Start the server
 
-Join our community of developers creating universal apps.
+```bash
+  expo start --tunnel (for online code editor)
+  expo start (for local machine)
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+for expo build
+
+``` bash
+   eas login
+   eas build:configure
+   eas build
+```
+
+for build using gradle
+
+``` bash
+   npx expo prebuild || yarn expo prebuild
+   cd android
+   for windows: gradlew assembleRelease
+   for linux or mac OS: ./gradlew assembleRelease
+```
+
+## Reference Documentation
+
+1. [Expo](https://linktodocumentation)
+2. Android Build
+   - [Step-1](https://docs.expo.dev/workflow/prebuild/)
+   - [Step-2](https://medium.com/geekculture/react-native-generate-apk-debug-and-release-apk-4e9981a2ea51)
+3. [Expo Build](https://docs.expo.dev/build/setup/)
+
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at arihant.jain@getgrahak.in
+
+
+## Contact
+
+If you have any problem, please reach out to us at arihant.jain@getgrahak.in
+
