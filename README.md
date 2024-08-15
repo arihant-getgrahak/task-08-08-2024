@@ -33,8 +33,8 @@ Install dependencies
 Start the server
 
 ```bash
-  expo start --tunnel (for online code editor)
-  expo start (for local machine)
+  npx expo start --tunnel || yarn expo start --tunnel (for online code editor)
+  npx expo start || yarn expo start (for local machine)
 ```
 
 for expo build
